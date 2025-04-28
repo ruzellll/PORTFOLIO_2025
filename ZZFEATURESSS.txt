@@ -1,0 +1,62 @@
+REFERENCESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+https://github.com/emmabostian/developer-portfolios?tab=readme-ov-file 
+https://aditya-portfolio-dusky.vercel.app/    -   -   - format / content
+https://dinataklit.github.io/DinaTaklitPortfolio/ -   - copy portfolio content??   
+https://afamolie.com/   -   -   -   moving background
+https://mahdi.is-a.dev/ -   -   -   background color / style
+https://pulik.dev/  -   -   -   -   format (certifications / security research)
+https://codervai.vercel.app/    -   navbar / header
+https://me.evesq
+.com/   -   -   -   japanese mf
+https://toniferr.github.io/ -   -   multi-lingual
+https://cyberstorm.vercel.app/  -   goodshittt
+https://iamdhakrey.dev/#    -   -   WTF?!
+https://hsmkrt1996.com/     -   -   WTFFFFFF?!
+https://multikitty.onrender.com/#   movable containers
+https://dinogomez.vercel.app/   -   movable containers
+
+
+AETHRAAAAAAAA!!!!!! - - - - - - - - - - - - - - -
+https://monolithstudio.com/?ref=3dwebsites.design
+
+3D ANIMATIONS - - - - - - - - - - - - - - - - - - 
+https://dotlinecode.com/en/?ref=3dwebsites.
+
+SIMPLY goodshittt - - - - - - - - - - - - -
+https://knob.design/?ref=3dwebsites.design
+
+
+CONTENTS  - - - - - - - - - - - - - - - - - -
+https://sawad.framer.website/
+
+FEATURESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+light and dark mode.
+???  text typing  ???
+
+    backdrop-filter: blur(8px);
+
+COLOR SCHEMEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+#FFC420 -   BRIGHT YELLOW
+#0A100D -   JET
+#EFE9E0 -   SOFT IVORY
+
+#0A100D
+#b5b5b5 
+
+[data-theme="light"] {
+  --color-primary: #fff;
+  --color-secondary: #FFC420;
+  --color-teriary: #0d0a10;
+  --text-color-primary: #0d0a10;
+  --text-color-secondary: #EFE9E0;
+  --text-color-inverted: #EFE9E0;
+}
+
+[data-theme="dark"] {
+  --color-primary: #0b0e14;
+  --color-secondary: #000;
+  --color-teriary: #  ;
+  --text-color-primary: #EFE9E0;
+  --text-color-secondary: #EFE9E0;
+  --text-color-inverted: #EFE9E0;
+}

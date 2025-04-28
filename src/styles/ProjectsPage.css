@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.projects-page {
+  @apply h-auto pt-[8rem] pb-[2rem] px-8;
+}
+.projects-container {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4;
+}
+.projects-card {
+  @apply w-full h-auto;
+}
+.linkButton {
+  @apply md:max-w-[70vw] lg:max-w-[60vw] flex justify-center mx-auto my-8 p-4 bg-[var(--black-yellow)] text-[var(--white-black)] cursor-pointer;
+}

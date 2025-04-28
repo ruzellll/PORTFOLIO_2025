@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/* NAV-MOBILE */
+nav {
+  @apply z-100 fixed max-w-fit w-[80%] p-2 bg-[var(--black-white)] rounded-4xl items-center text-center top-4 left-1/2 transform -translate-x-1/2;
+}
+.menu {
+  @apply flex justify-center items-center md:hidden w-full;
+}
+.navbar {
+  @apply flex flex-col-reverse w-[200px] justify-center;
+}
+.navButton-container {
+  @apply flex flex-col justify-center gap-2;
+}
+.navButton {
+  @apply w-full cursor-pointer p-2 text-[var(--white-black)] rounded-full;
+}
+.menuButton {
+  @apply flex cursor-pointer h-fit w-fit p-2 mx-auto text-[var(--white-black)] rounded-full items-center;
+}
+.themeButton {
+  @apply flex cursor-pointer h-fit w-fit p-2 mx-auto text-[var(--white-black)] rounded-full items-center;
+}
+
+/* NAV-DESKTOP */
+nav {
+  @apply md:max-w-[750px];
+}
+.navbar {
+  @apply md:flex-row md:w-full md:mx-auto gap-2;
+}
+.navButton-container {
+  @apply md:flex-row md:w-full md:justify-evenly gap-2;
+}
+.themeButton {
+  @apply md:mb-0;
+}
+
+/* NAV-STATES */
+.navButton {
+  @apply hover:outline hover:outline-2 [outline-offset:-2px] hover:[outline-color:[var(--text-color-inverted)]];
+}
+.navButton.active {
+  @apply bg-[var(--white-yellow)] text-[var(--black-black)];
+}
+.themeButton {
+  @apply hover:outline hover:outline-2 hover:[outline-color:[var(--black-black)]];
+}
+.menuOverlay {
+  @apply fixed top-0 left-0 w-full h-full bg-black/25 z-[100];
+}

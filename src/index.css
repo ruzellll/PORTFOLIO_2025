@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Couture";
+  src: url("/fonts/couture/couture-bld.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-theme="light"] {
+  /* --lightmode-darkmode: */
+  --black-black: #0d0a10;
+  --black-yellow: #0d0a10;
+  --black-white: #0d0a10;
+  --yellow-black: #ffb400;
+  --yellow-yellow: #ffb400;
+  --yellow-white: #ffb400;
+  --white-black: #efe9e0;
+  --white-yellow: #efe9e0;
+  --white-white: #efe9e0;
+}
+
+[data-theme="dark"] {
+  /* --lightmode-darkmode: */
+  --black-black: #0d0a10;
+  --black-yellow: #ffb400;
+  --black-white: #efe9e0;
+  --yellow-black: #0d0a10;
+  --yellow-yellow: #ffb400;
+  --yellow-white: #efe9e0;
+  --white-black: #0d0a10;
+  --white-yellow: #ffb400;
+  --white-white: #efe9e0;
+}
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[var(--black-yellow)];
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[var(--yellow-black)];
+}
+
+:root {
+  --font-primary: Couture, sans-serif;
+}
+
+* {
+  font-family: var(--font-primary);
+}
+
+body {
+  @apply bg-[var(--yellow-black)];
+}
+
+svg {
+  @apply overflow-visible;
+}

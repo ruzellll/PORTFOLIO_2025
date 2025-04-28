@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.skils-page {
+  @apply p-4 pt-[6rem];
+}
+.arrowDown {
+  @apply absolute absolute text-[var(--black-yellow)] bottom-4 left-1/2 transform -translate-x-1/2 md:invisible;
+}
+.charts-group {
+  @apply flex flex-col md:flex-row justify-evenly;
+}
+.chart {
+  @apply flex flex-1 justify-center p-6 mt-19;
+}
+.chart-grid,
+.chart-subject {
+  @apply stroke-[var(--black-white)] text-[var(--black-white)] bg-black;
+}
+.chart-label {
+  @apply text-[var(--black-yellow)] text-center text-3xl font-bold;
+}

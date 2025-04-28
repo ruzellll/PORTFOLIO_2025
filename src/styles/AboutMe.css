@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+.aboutMe-page {
+  @apply h-[100vh] w-[100vw] relative;
+  @apply overflow-hidden;
+}
+.bgName {
+  @apply absolute z-1 rotate-270 text-[200px] text-[var(--black-yellow)] inline-block leading-none select-none tracking-tight;
+  @apply md:rotate-0 md:text-[35vh];
+}
+.ruzel {
+  @apply bottom-55 -left-50;
+  @apply md:bottom-[30%] md:left-0;
+}
+.yuan {
+  @apply top-60 -right-40;
+  @apply md:top-auto md:bottom-0 md:right-0;
+}
+.author-container {
+  @apply absolute z-3 w-50 h-50 bg-black border-4 border-[var(--white-white)] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer;
+}
+.ghibli-image {
+  @apply w-full hover:scale-[1.15] transition-transform duration-500 ease-in-out;
+}
+.overlay {
+  @apply fixed inset-0 w-full h-full bg-black/50 flex justify-center items-center z-[1000];
+}
+.overlay-content {
+  @apply relative w-[95%] max-w-[500px] bg-[var(--white-black)] text-[var(--black-white)] p-5 text-justify h-[95vh] border border-[var(--black-yellow)] border-2 overflow-y-auto;
+  @apply sm:p-[50px];
+}
+.close-button {
+  @apply absolute top-[10px] right-[10px] h-8 w-8 bg-none border-none text-[36px] cursor-pointer flex justify-center items-center;
+}
+.author-image-container {
+  @apply flex my-6 justify-center items-center bg-[gray]/50 rounded-md;
+}
+.author-image {
+  @apply w-[50%] h-min my-[15px] bg-[#b5b5b5] rounded-md;
+}
+.overlay-content h3 {
+  @apply my-[10px] text-[1.2rem] text-[var(--black-white)] font-bold;
+}
+.overlay-content ul {
+  @apply list-disc text-left my-[20px] p-[20px] border border-[var(--black-yellow)] border-1 p-4;
+}
+.overlay-content ul li {
+  @apply m-[10px] text-[var(--black-white)];
+}
+.overlay-content section {
+  @apply my-[20px] border border-[var(--black-yellow)] border-1 p-4;
+}
+.overlay-content p {
+  @apply my-[20px] leading-[1.6];
+}
+.overlay-content > h1,
+h2,
+h3 {
+  @apply opacity-75;
+}
+.overlay-content::-webkit-scrollbar {
+  @apply w-[10px];
+}
+.overlay-content::-webkit-scrollbar-track {
+  @apply bg-[var(--white-black)];
+}
+.overlay-content::-webkit-scrollbar-thumb {
+  @apply bg-[var(--black-yellow)];
+}
+
+.tooltip {
+  @apply absolute top-[-30px] left-[90%] translate-x-[-50%] bg-[var(--white-black)] text-[var(--black-white)] border-2 border-[var(--black-white)] px-[15px] py-[10px] text-[16px] whitespace-nowrap z-10 opacity-0 rotate-[10deg] pointer-events-none;
+  box-shadow: 5px 5px 0px var(--black-yellow);
+  animation: fadeIn 0.75s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.contacts-button {
+  @apply w-full my-5 p-2 bg-[var(--black-yellow)] text-[var(--white-black)] rounded-full cursor-pointer;
+  @apply hover:-translate-y-[2px] transition-transform duration-200;
+}
+.hover-container {
+  @apply z-2 absolute text-white p-2.5 rounded-md opacity-0 animate-[animate_1s_forwards] pointer-events-none select-none;
+}
+
+.top-left {
+  @apply top-[80px] left-[10%];
+}
+.top-right {
+  @apply top-[140px] right-[10%] bg-[var(--white-yellow)];
+}
+.bottom-left {
+  @apply bottom-1 left-[50%] transform -translate-x-[80%];
+}
+.bottom-right {
+  @apply w-[35%] bottom-10 right-[10%];
+}
+.fun-facts-container {
+  @apply max-w-fit mx-auto p-2;
+}
+
+.fun-facts-title {
+  @apply text-sm text-center text-black text-lg font-semibold mb-4;
+}
+
+.fun-fact-item {
+  @apply text-xs text-black flex items-center gap-2 font-medium;
+}
+
+.fun-fact-subtext {
+  @apply text-xs text-gray-800 text-sm;
+}
+.dev-container {
+  @apply w-80 bg-[var(--white-yellow)] rounded-xl overflow-hidden shadow-md;
+}
+.dev-title {
+  @apply text-xl text-[var(--black-black)] p-4 pt-6 font-semibold leading-tight;
+}
+@keyframes animate {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start 20px lower */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}

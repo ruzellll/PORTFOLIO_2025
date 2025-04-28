@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+.contacts-page {
+  @apply p-4 pt-[5rem];
+}
+.contact-container {
+  @apply flex flex-col gap-4 mx-auto max-w-[750px] h-[100vh];
+}
+.email-section {
+  @apply h-[100vh];
+}
+.letsWork {
+  @apply text-[var(--black-black)] text-5xl pt-6 text-[var(--black-yellow)];
+}
+.together {
+  @apply text-[var(--black-black)] text-6xl font-bold pb-6 text-[var(--black-yellow)];
+}
+.email-form {
+  @apply flex flex-col gap-4 max-w-[750px] p-4 mx-2 border [border-color:var(--black-yellow)] bg-[var(--yellow-yellow)];
+}
+.form-group {
+  @apply flex items-center gap-4;
+}
+.form-group input {
+  @apply w-full p-2 border [border-color:var(--black-black)];
+}
+.form-group textarea {
+  @apply w-full max-h-[250px] p-2 border [border-color:var(--black-black)];
+}
+.submitButton {
+  @apply w-full p-2 bg-[var(--black-black)] text-[var(--yellow-yellow)] rounded-full cursor-pointer;
+  @apply hover:-translate-y-[2px] transition-transform duration-200;
+}
+.divider {
+  @apply flex flex-row w-full items-center gap-4 my-18 text-[var(--black-yellow)];
+}
+.links-container {
+  @apply flex flex-col gap-8 py-10 items-center;
+}
+.linksButton {
+  @apply cursor-pointer relative overflow-hidden w-[85%] max-w-[300px] h-[3rem] p-2 border [border-color:var(--black-yellow)] text-[var(--black-yellow)] bg-[var(--yellow-black)];
+}
+.linksButton:hover::before {
+  transform: scaleY(1);
+}
+.linksButton:hover {
+  color: var(--white-black);
+}
+.linksButton-content {
+  @apply relative flex items-center justify-center z-1;
+}
+.linksButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleY(0);
+  transform-origin: 0 150%;
+  width: 100%;
+  height: inherit;
+  background: var(--black-yellow);
+  transition: all 0.25s ease;
+}
+
+/* DESKTOP */
+.contacts-page {
+  @apply md:h-[100vh] md:overflow-hidden;
+}
+.contact-container {
+  @apply md:flex-row md:max-w-[80%] md:justify-between;
+}
+.email-section,
+.links-container {
+  @apply md:flex-1;
+}
+.links-container {
+  @apply md:py-24;
+}
+.divider {
+  @apply md:hidden;
+}
+/***** CONTACTS *************************************************************************/
