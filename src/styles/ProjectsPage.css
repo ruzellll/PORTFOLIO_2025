@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 .projects-page {
-  @apply h-auto pt-[8rem] pb-[2rem] px-8;
+  @apply h-auto pt-[4rem] pb-[2rem] px-8;
 }
 .projects-container {
-  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4;
+  @apply gap-4;
 }
 .projects-card {
   @apply w-full h-auto;

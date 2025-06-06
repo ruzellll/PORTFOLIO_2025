@@ -1,74 +1,37 @@
 @import "tailwindcss";
 
-/* Card Container */
 .card-container {
-  @apply relative max-w-full h-[75vh] bg-[var(--white-white)] border border-4 border-[var(--black-yellow)] overflow-hidden;
+  @apply flex flex-col md:flex-row gap-6 my-10 items-start;
 }
 
-/* Image Wrapper */
-.card-image-wrapper {
-  @apply h-full w-full bg-gray-200;
+.card-invert {
+  @apply md:flex-row-reverse;
 }
+
+.card-image-section {
+  @apply md:sticky top-20 h-fit mt-12 w-full md:w-[60%];
+}
+
 .card-header {
-  @apply absolute top-2 left-2 p-2 bg-[var(--white-black)]/80 text-xl font-semibold text-[var(--black-white)] rounded-md;
+  @apply text-xl font-semibold mb-2;
 }
-/* Image */
+
 .card-image {
-  @apply h-full w-full object-cover;
+  @apply w-full rounded-xl object-cover shadow-lg;
 }
 
-/* Card Details */
 .card-details {
-  @apply absolute bottom-0 left-0 w-full h-full bg-[var(--white-yellow)] p-4 flex flex-col transition-transform duration-300;
+  @apply relative md:mx-10 w-full md:w-[40%];
 }
 
-/* Expanded State */
-.card-expanded {
-  @apply translate-y-0;
-}
-
-.card-collapsed {
-  @apply translate-y-full;
-}
-
-/* Title */
 .card-title {
-  @apply text-xl font-semibold text-[var(--black-black)];
+  @apply text-[var(--black-white)] text-2xl font-bold mb-2;
 }
 
-/* Description */
 .card-description {
-  @apply text-justify indent-10 leading-loose flex-1 overflow-y-auto text-[var(--black-black)] mt-6 pr-10;
-}
-
-/* Close Button */
-.card-close-button {
-  @apply absolute flex items-center justify-center top-2 h-8 w-8 right-2 bg-[var(--white-yellow)] text-[var(--black-black)] rounded hover:bg-[var(--black-black)] hover:text-[var(--white-white)];
-}
-
-/* Show Details Button */
-.card-show-button {
-  @apply absolute bottom-0 w-full py-2 backdrop-blur-md text-black font-semibold opacity-70 hover:opacity-100 cursor-pointer;
-}
-
-/* Scrollbar Customization */
-.card-description::-webkit-scrollbar {
-  width: 6px; /* Customize scrollbar width */
-}
-
-.card-description::-webkit-scrollbar-thumb {
-  @apply bg-[var(--black-black)] /* Customize scrollbar thumb color */;
-}
-
-.card-description::-webkit-scrollbar-thumb:hover {
-  @apply bg-[#555] /* Change color on hover */;
-}
-
-.card-description::-webkit-scrollbar-track {
-  @apply bg-[#aaa];
+  @apply text-[var(--black-white)] leading-10 mx-10 text-justify;
 }
 
 .card-link-button {
-  @apply absolute bottom-[60px] left-1/2 transform -translate-x-1/2 bg-black text-white py-2 px-5 rounded-md text-center no-underline text-sm font-bold;
-  @apply hover:-translate-y-[2px] transition-transform duration-200;
+  @apply inline-block mt-4 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded hover:bg-blue-700 transition;
 }

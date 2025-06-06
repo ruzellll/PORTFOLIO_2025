@@ -202,7 +202,7 @@ export default function AboutMe() {
 
             <ul>
               <h3>Skills</h3>
-              <li>Proficient in React, and JavaScript.</li>
+              <li>Proficient in React, JavaScript, and TypeScript.</li>
               <li>
                 Experienced in building responsive designs with CSS and
                 Tailwind.

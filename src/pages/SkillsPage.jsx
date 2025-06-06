@@ -11,22 +11,20 @@ import {
 import { useState, useEffect } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-const programmingSkills = [
-  { subject: "React.js", A: 64 },
-  { subject: "CSS", A: 66 },
-  { subject: "HTML", A: 75 },
+const languages = [
+  { subject: "Typescript", A: 64 },
+  { subject: "HTML5", A: 66 },
+  { subject: "CSS3", A: 75 },
   { subject: "Javascipt", A: 42 },
-  { subject: "Tailwind", A: 50 },
   { subject: "Python", A: 32 },
 ];
 
-const technicalSkills = [
-  { subject: "Troubleshooting", A: 60 },
-  { subject: "UX/UI Design", A: 70 },
-  { subject: "Figma", A: 64 },
-  { subject: "Communication", A: 69 },
-  { subject: "Prompting", A: 80 },
-  { subject: "Problem-Solving", A: 71 },
+const frameworksAndLibraries = [
+  { subject: "Tailwind", A: 60 },
+  { subject: "React", A: 70 },
+  { subject: "Express", A: 64 },
+  { subject: "GSAP", A: 69 },
+  { subject: "Django", A: 80 },
 ];
 
 export default function SkillsPage() {
@@ -50,9 +48,9 @@ export default function SkillsPage() {
         <div className="chart">
           <div className="w-full h-[70vh]">
             {/* Limits max width and height */}
-            <p className="chart-label">Programming Skills</p>
+            <p className="chart-label">Languages</p>
             <ResponsiveContainer width="100%" height="100%">
-              <RadarChart outerRadius="70%" data={programmingSkills}>
+              <RadarChart outerRadius="70%" data={languages}>
                 {/* Adjust grid and text color based on theme */}
                 <PolarGrid className="chart-grid" />
                 <PolarAngleAxis
@@ -81,7 +79,7 @@ export default function SkillsPage() {
         <div className="chart">
           <div className="w-full h-[70vh]">
             {/* Limits max width and height */}
-            <p className="chart-label">Technical Skills</p>
+            <p className="chart-label">Frameworks / Libraries</p>
             <ResponsiveContainer
               width="100%"
               height="100%"
@@ -89,7 +87,7 @@ export default function SkillsPage() {
             >
               <RadarChart
                 outerRadius="70%"
-                data={technicalSkills}
+                data={frameworksAndLibraries}
                 className="overflow-visible"
               >
                 {/* Adjust grid and text color based on theme */}
